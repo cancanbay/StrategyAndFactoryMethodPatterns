@@ -15,11 +15,10 @@ public abstract class Book {
     public Book(){
 
     }
-    public Book(String name, String author, Double price, IBookSellingTypeBehavior behavior){
+    public Book(String name, String author, Double price){
         this.name = name;
         this.author = author;
         this.price = price;
-        this.behavior = behavior;
     }
 
     public String sayBehaviorType() {

@@ -25,6 +25,6 @@ public abstract class BookStore {
           }
      }
 
-     public abstract Book createBook(String name, String author, Double price, IBookSellingTypeBehavior behavior);
+     public abstract Book createBook(String name, String author, Double price);
 
 }

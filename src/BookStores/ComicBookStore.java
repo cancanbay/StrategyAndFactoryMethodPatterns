@@ -4,6 +4,7 @@ import BookStores.BookStore;
 import Books.Book;
 import Books.ComicBook;
 import Strategy.IBookSellingTypeBehavior;
+import Strategy.Loanable;
 
 /**
  * Created by canbay on 21.04.2017.
@@ -18,8 +19,8 @@ public class ComicBookStore extends BookStore {
     }
 
     @Override
-    public Book createBook(String name, String author, Double price, IBookSellingTypeBehavior behavior) {
-        return new ComicBook(name,author,price,behavior);
+    public Book createBook(String name, String author, Double price) {
+        return new ComicBook(name,author,price);
     }
 
 

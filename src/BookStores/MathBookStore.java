@@ -17,7 +17,7 @@ public class MathBookStore extends BookStore {
         sellBookNew(book);
     }
     @Override
-    public Book createBook(String name, String author, Double price, IBookSellingTypeBehavior behavior) {
-        return new MathBook(name,author,price,behavior);
+    public Book createBook(String name, String author, Double price) {
+        return new MathBook(name,author,price);
     }
 }

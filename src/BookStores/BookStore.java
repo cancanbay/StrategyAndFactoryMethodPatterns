@@ -2,6 +2,8 @@ package BookStores;
 
 import Books.Book;
 import Strategy.IBookSellingTypeBehavior;
+import Strategy.Loanable;
+import Strategy.Saleable;
 
 /**
  * Created by canbay on 21.04.2017.
@@ -12,11 +14,12 @@ public abstract class BookStore {
      public abstract void sayHelloAndSell(Book book);
 
      public void sellBookNew(Book book){
-          if(book.sayBehaviorType().equals("Saleable Books!")){
+
+          if(book.behavior.getClass().getSimpleName().equals("Saleable")){
                System.out.println("You selled a book named "+book.getName() + " with author "+book.getAuthor() + " with the price" +
                        " of "+ book.getPrice()+"$");
           }
-          else if(book.sayBehaviorType().equals("Loanable Books!")){
+          else if(book.behavior.getClass().getSimpleName().equals("Loanable")){
                System.out.println("You loaned a book named "+ book.getName() + " with author "+book.getAuthor() + " with the price" +
                        " of "+ book.getPrice()+"$");
           }

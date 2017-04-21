@@ -11,10 +11,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /* COMIC BOOK'S DEFAULTLY HAS LOANABLE STRATEGY
-         * MATH BOOK'S DEFAULTLY HAS SALEABLE STRATEGY
-         * SCICENCE BOOK'S DEFAULTLY HAS LOANABLE STRATEGY
-         * */
+        /* COMIC BOOKS HAS LOANABLE STRATEGY
+         * MATH BOOKS HAS SALEABLE STRATEGY
+         * SCICENCE BOOKS HAS LOANABLE STRATEGY
+         */
         BookStore comicstore = new ComicBookStore();
         BookStore mathstore = new MathBookStore();
         BookStore sciencestore = new ScienceBookStore();

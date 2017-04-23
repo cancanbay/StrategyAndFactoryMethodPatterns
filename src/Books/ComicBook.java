@@ -15,7 +15,7 @@ public class ComicBook extends Book {
         name = "Default Comic Book Name";
         author = "Default Comic Book Author";
         price = 0.0;
-        behavior = new Loanable();
+        behavior = new DefaultSellingType();
     }
 
     public ComicBook(String name, String author, Double price) {

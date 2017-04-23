@@ -8,6 +8,6 @@ import Strategy.IBookSellingTypeBehavior;
 public class Saleable implements IBookSellingTypeBehavior {
     @Override
     public String saySellingType() {
-         return "Saleable Books!";
+         return "Saleable";
     }
 }

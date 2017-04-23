@@ -6,4 +6,5 @@ package Strategy;
 public interface IBookSellingTypeBehavior {
 
     String saySellingType();
+
 }

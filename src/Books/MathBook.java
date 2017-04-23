@@ -1,6 +1,7 @@
 package Books;
 
 import Books.Book;
+import Strategy.DefaultSellingType;
 import Strategy.IBookSellingTypeBehavior;
 import Strategy.Saleable;
 
@@ -13,7 +14,7 @@ public class MathBook extends Book {
         name = "Default Mathematic Book Name";
         author = "Default Mathematic Book Author";
         price = 0.0;
-        behavior = new Saleable();
+        behavior = new DefaultSellingType();
     }
 
     public MathBook(String name, String author, Double price) {
